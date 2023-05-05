@@ -8,8 +8,6 @@ import (
 	"GoNote/test4"
 )
 
-
-
 func main() {
 	// test.Testconst1()
 	// test.Testconst2()
@@ -48,5 +46,10 @@ func main() {
 	// test4.TestSlice3()
 	// test4.TestSlice4()
 	// test4.TestSlice5()
-	test4.TestMap1()
+	// test4.TestMap1()
+	// test4.TestMap2()
+	// test4.TestMap3()
+	// test4.TestMap4()
+	test4.TestdefineType1()
+	test4.TestdefineType2()
 }

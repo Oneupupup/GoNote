@@ -5,7 +5,8 @@ import (
 	// "GoNote/test1"
 	// "GoNote/test2"
 	// "GoNote/test3"
-	"GoNote/test4"
+	// "GoNote/test4"
+	"GoNote/test5"
 )
 
 func main() {
@@ -50,6 +51,11 @@ func main() {
 	// test4.TestMap2()
 	// test4.TestMap3()
 	// test4.TestMap4()
-	test4.TestdefineType1()
-	test4.TestdefineType2()
+	// test4.TestdefineType1()
+	// test4.TestdefineType2()
+	// test4.TestStruct1()
+	// test4.TestStruct2()
+	// test4.TestStruct3()
+	// test5.TestMethod1()
+	test5.TestInterface1()
 }

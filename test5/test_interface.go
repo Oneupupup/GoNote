@@ -52,3 +52,20 @@ func TestInterface1() {
 	sendMes(&tm)
 	sendMes(&img)
 }
+
+func TestInterface2(){
+	var n1 int = 1
+	// 空接口
+	n1interface := interface{}(n1)
+	// 空接口转换为其他类型
+	n2 := n1interface.(int)
+	fmt.Printf("n2 = %v\n",n2)
+	// 空接口转换为其他类型，如果转换失败，会报错
+	n3,ok := n1interface.(int)
+	if ok {
+		fmt.Printf("n3 = %v\n",n3)
+	}else{
+		fmt.Printf("n1interface can't convert to int\n")
+	}
+	
+}

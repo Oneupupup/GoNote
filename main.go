@@ -57,5 +57,9 @@ func main() {
 	// test4.TestStruct2()
 	// test4.TestStruct3()
 	// test5.TestMethod1()
-	test5.TestInterface1()
+	// test5.TestInterface1()
+	// test5.TestInterface2()
+	// test5.TestCoroutine1()
+	// test5.TestChannel1()
+	test5.TestCoroutine2()
 }

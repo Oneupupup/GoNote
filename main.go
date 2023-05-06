@@ -6,7 +6,8 @@ import (
 	// "GoNote/test2"
 	// "GoNote/test3"
 	// "GoNote/test4"
-	"GoNote/test5"
+	// "GoNote/test5"
+	"GoNote/test6"
 )
 
 func main() {
@@ -61,5 +62,10 @@ func main() {
 	// test5.TestInterface2()
 	// test5.TestCoroutine1()
 	// test5.TestChannel1()
-	test5.TestCoroutine2()
+	// test5.TestCoroutine2()
+	// test6.TestStd1()
+	// test6.TestStd2()
+	// test6.TestString()
+	// test6.Testutf8()
+	test6.TestTime()
 }

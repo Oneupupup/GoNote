@@ -67,5 +67,11 @@ func main() {
 	// test6.TestStd2()
 	// test6.TestString()
 	// test6.Testutf8()
-	test6.TestTime()
+	// test6.TestTime1()
+	// test6.TestTime3()
+	// test6.TestTime4()
+	// test6.TestFile1()
+	// test6.TestFile2()
+	// test6.TestFile4()
+	test6.TestFile5()
 }

@@ -1,11 +1,11 @@
 package test6
 
-import(
+import (
 	"fmt"
 	"time"
 )
 
-func TestTime() {
+func TestTime1() {
 	// time 包
 	// 时段
 	// type Duration int64
@@ -31,4 +31,39 @@ func TestTime() {
 	}else{
 		fmt.Println(time.Since(d2))
 	}
+}
+
+func TestTime2() {
+	var intChan chan int = make(chan int)
+	select{
+		case<-intChan:
+			fmt.Println("收到了验证码")
+		case <- time.After(time.Second):
+			fmt.Println("超时了")
+	}
+}
+
+// 时区
+func TestTime3() {
+	l1,err := time.LoadLocation("Asia/Shanghai")
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(l1)
+}
+
+func TestTime4() {
+	var intChan chan int = make(chan int)
+	go func() {
+		time.Sleep(time.Second)
+		intChan <- 1
+	}()
+	TickerFor:
+	select{
+		case<-intChan:
+			fmt.Println()
+			break TickerFor
+		case <- time.NewTicker(time.Millisecond * 100).C:
+			fmt.Println(".")
+		}
 }

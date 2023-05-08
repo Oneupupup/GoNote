@@ -7,7 +7,8 @@ import (
 	// "GoNote/test3"
 	// "GoNote/test4"
 	// "GoNote/test5"
-	"GoNote/test6"
+	// "GoNote/test6"
+	"GoNote/test7"
 )
 
 func main() {
@@ -83,4 +84,6 @@ func main() {
 	// test6.TestSyn2()
 	// test6.TestSyn3()
 	// test6.TestSyn4()
+	// test7.Recursion()
+	test7.Closure()
 }
